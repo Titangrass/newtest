@@ -1,21 +1,27 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  
 }
 
 body {
-  font-family: 'montserrat', sans-serif;
-  background-image: url('bg.jpg');
+  font-family: 'Archer';
+  background: #0000;
+  color: rgba(15, 1, 95, 0.959);
+  background-image: url('relion background.jpg');
   background-size: cover;
-  background-position: top center;
+  
+  
 }
 
-.app-wrap {
+.app-wrap{
+ /* margin: auto; 
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+  flex-direction: column; 
+  min-height: 80vh;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)); 
+  */
 }
 
 header {
@@ -27,49 +33,95 @@ header {
 
 header input {
   width: 100%;
-  max-width: 280px;
+  max-width: 300px;
   padding: 10px 15px;
-  border: none;
-  outline: none;
+  outline: 10px black;
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 16px 0px 16px 0px;
-  border-bottom: 3px solid #DF8E00;
+  border: 3px solid rgba(23, 33, 128, 0.37);
   
   color: #313131;
   font-size: 20px;
   font-weight: 300;
-  transition: 0.2s ease-out;
+  transition: 0.4s ease-in-out;
+
 }
 
+
 header input:focus {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(228, 233, 240, 0.911);
 }
 
 main {
   flex: 1 1 100%;
-  padding: 25px 25px 50px;
+  padding: 25px 25px 50px; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: center; 
+
 }
 
-.location .city {
-  color: #FFF;
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 5px;
+.location{
+    display: grid;
+    grid-template-columns: (2, 2fr);
+    grid-gap: 20px;
+
 }
 
-.location .date {
-  color: #FFF;
-  font-size: 16px;
+.location > div{
+    height: 80px;
+    width: 110px;
+    background: url('relionclouds6.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 400;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+    border: 5px solid #3B5998;
 }
+
+
+.current{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.current > div{
+    border: 8px solid rgba(23, 33, 128, 0.37);
+    height: 125px;
+    width: 150px;
+    background: url('relionclouds6.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.current > div:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+
+}
+
+
+
+
+
+
 
 .current .temp {
   color: #FFF;
-  font-size: 102px;
-  font-weight: 900;
+  font-size: 100px;
+  font-weight: 800;
   margin: 30px 0px;
   text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
 }
@@ -78,7 +130,7 @@ main {
   font-weight: 500;
 }
 
-.current .weather {
+/*.current .weather {
   color: #FFF;
   font-size: 32px;
   font-weight: 700;
@@ -87,9 +139,104 @@ main {
   text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
 }
 
+.current .pressure{
+    color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.current .humidity{
+    color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+
 .current .hi-low {
   color: #FFF;
   font-size: 24px;
   font-weight: 500;
   text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
 }
+
+.current .wind{
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.current .rain{
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+*/
+.fa {
+                padding: 20px;
+                font-size: 30px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+                border-radius: 50%;
+                }
+
+        .fa:hover {
+            opacity: 0.7;
+            }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+            }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+            }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+            }
+            
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+            }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+            }
+        .fa-instagram {
+            background: #125688;
+            color: white;
+            }
+
+        .fa-pinterest {
+            background: #cb2027;
+            color: white;
+            }
+
+        .fa-snapchat-ghost {
+            background: #fffc00;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+            
+         .btn {
+            border: none;
+            background-color: inherit;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+            }
+
+        .submit {
+            color: dodgerblue;
+            }   
